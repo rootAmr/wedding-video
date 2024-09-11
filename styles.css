@@ -1,0 +1,205 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('https://github.com/user-attachments/assets/83744292-df35-4c19-91e9-642c7d2e239f');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    color: #fff;
+  }
+  
+  .white-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    color: #333;
+  }
+  
+  .video-card {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 0;
+    padding-top: 56.25%;
+    position: relative;
+  }
+  
+  .video-card::before {
+    content: "";
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .video-card[data-thumbnail="1"]::before {
+    background-image: url('https://img.youtube.com/vi/sL3kvGqwxJM/0.jpg');
+  }
+  
+  .video-card[data-thumbnail="2"]::before {
+    background-image: url('https://img.youtube.com/vi/hX5WIpSzmhg/0.jpg');
+  }
+  
+  .video-card[data-thumbnail="3"]::before {
+    background-image: url('https://img.youtube.com/vi/C4uyJN_XCNo/0.jpg');
+  }
+  
+  .video-card[data-thumbnail="4"]::before {
+    background-image: url('https://img.youtube.com/vi/yT_Ym31wGDQ/0.jpg');
+  }
+  
+  .video-card[data-thumbnail="5"]::before {
+    background-image: url('https://img.youtube.com/vi/-zf_WPJGpIQ/0.jpg');
+  }
+  
+  .video-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .video-card a {
+    display: block;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+    padding: 15px;
+    text-decoration: none;
+  }
+  
+  .video-card a:hover {
+    color: #ffc107;
+  }
+  
+  .video-button {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .video-button a {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #a3a3a3;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .video-button a:hover {
+    background-color: #f8f9fa;
+  }
+  
+  .info-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #2b2b2b;
+    margin-top: 20px;
+  }
+  
+  .info-list li {
+    margin-bottom: 10px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 3rem;
+    color: #ffc107;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .promo-text {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    color: #f8f9fa;
+  }
+  
+  .promo-text span {
+    font-weight: bold;
+    color: #ffc107;
+  }
+  
+  .info-text {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #f8f9fa;
+    font-weight: 500;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+  .wa-button {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .wa-button a {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #25d366; /* Warna hijau WhatsApp */
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+    position: relative;
+    animation: vibrate 0.5s infinite; /* Tambahkan animasi getaran */
+  }
+  
+  .wa-button a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: opacity 0.3s;
+    z-index: 0;
+    opacity: 0;
+  }
+  
+  .wa-button a:hover::before {
+    opacity: 1;
+  }
+  
+  .wa-button a:hover {
+    background-color: #1ebe57; /* Warna hijau lebih gelap saat hover */
+    transform: scale(1.1);
+  }
+  
+  .wa-button img {
+    width: 24px;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+  
+  @keyframes vibrate {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+  }
+  

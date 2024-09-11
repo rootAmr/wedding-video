@@ -122,20 +122,21 @@ body {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
   
-  .promo-text {
-    text-align: center;
-    font-size: 1.1rem;
-    margin-bottom: 40px;
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 20px;
-    border-radius: 10px;
-    color: #f8f9fa;
-  }
-  
-  .promo-text span {
-    font-weight: bold;
-    color: #ffc107;
-  }
+    .promo-text {
+      text-align: justify;
+      text-align-last: center; 
+      font-size: 1.1rem;
+      margin-bottom: 40px;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      border-radius: 10px;
+      color: #f8f9fa;
+    }
+
+    .promo-text span {
+      font-weight: bold;
+      color: #ffc107;
+    }
   
   .info-text {
     text-align: center;
@@ -160,12 +161,12 @@ body {
     font-size: 1.2rem;
     font-weight: bold;
     color: #ffffff;
-    background-color: #25d366; /* Warna hijau WhatsApp */
+    background-color: #25d366; 
     border-radius: 10px;
     text-decoration: none;
     transition: background-color 0.3s, transform 0.3s;
     position: relative;
-    animation: vibrate 0.5s infinite; /* Tambahkan animasi getaran */
+    animation: vibrate 0.5s infinite; 
   }
   
   .wa-button a::before {
@@ -187,7 +188,7 @@ body {
   }
   
   .wa-button a:hover {
-    background-color: #1ebe57; /* Warna hijau lebih gelap saat hover */
+    background-color: #1ebe57; 
     transform: scale(1.1);
   }
   

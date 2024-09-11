@@ -122,21 +122,20 @@ body {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
   
-    .promo-text {
-      text-align: justify;
-      text-align-last: center; 
-      font-size: 1.1rem;
-      margin-bottom: 40px;
-      background-color: rgba(0, 0, 0, 0.6);
-      padding: 20px;
-      border-radius: 10px;
-      color: #f8f9fa;
-    }
-
-    .promo-text span {
-      font-weight: bold;
-      color: #ffc107;
-    }
+  .promo-text {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    color: #f8f9fa;
+  }
+  
+  .promo-text span {
+    font-weight: bold;
+    color: #ffc107;
+  }
   
   .info-text {
     text-align: center;
